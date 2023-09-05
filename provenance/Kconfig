@@ -1,0 +1,10 @@
+config SECURITY_PROVENANCE
+         bool "FlowRos - Provenance"
+         depends on SECURITY
+         depends on NET
+         depends on INET
+         select SECURITY_NETWORK
+         default y
+         help
+          This selects FlowRos IFC modules. It is a policy enforcement module through
+          a Linux Security Module.
